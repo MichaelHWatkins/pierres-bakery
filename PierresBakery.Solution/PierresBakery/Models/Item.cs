@@ -37,7 +37,7 @@ namespace PierresBakery.Models
           price += 2;
         }
       }
-      return input;
+      return price;
     }
   }
 }

@@ -21,4 +21,23 @@ namespace PierresBakery.Models
       return price;
     }
   }
+
+  public class Pastry{
+    public static int CheckPastryPrice(int input)
+    {
+      int price = 0;
+      for(int i = 1; i <= input; i++)
+      {
+        if(i % 3 == 0)
+        {
+          price += 1;
+        }
+        else
+        {
+          price += 2;
+        }
+      }
+      return input;
+    }
+  }
 }

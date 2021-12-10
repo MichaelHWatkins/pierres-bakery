@@ -16,4 +16,17 @@ namespace PierresBakery.TestTools
       Assert.AreEqual(20, Bread.CheckBreadPrice(6));
     }
   }
+
+  [TestClass]
+  public class PastryTests 
+  {
+
+    [TestMethod]
+    public void CheckPastryPrice_ReturnsPriceForQuantityOfPrice_Int()
+    {
+      Assert.AreEqual(2, Pastry.CheckPastryPrice(1));
+      Assert.AreEqual(12, Pastry.CheckPastryPrice(7));
+    }
+  }
+
 }

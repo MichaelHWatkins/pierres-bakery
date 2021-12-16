@@ -4,10 +4,17 @@ using System.Collections.Generic;
 namespace PierresBakery.Models
 {
   public class Bread{
-    public static int CheckBreadPrice(int input)
+    public int BreadCount{get; set;}
+
+    public Bread(int breadCount)
+    {
+      BreadCount = breadCount;
+    }
+
+    public static int CheckBreadPrice(Bread bread)
     {
       int price = 0;
-      for(int i = 1; i <= input; i++)
+      for(int i = 1; i <= bread.BreadCount; i++)
       {
         if(i % 3 == 0)
         {
@@ -23,10 +30,16 @@ namespace PierresBakery.Models
   }
 
   public class Pastry{
-    public static int CheckPastryPrice(int input)
+    public int PastryCount{get; set;}
+
+    public Pastry(int pastryCount)
+    {
+      PastryCount = pastryCount;
+    }
+    public static int CheckPastryPrice(Pastry pastry)
     {
       int price = 0;
-      for(int i = 1; i <= input; i++)
+      for(int i = 1; i <= pastry.PastryCount; i++)
       {
         if(i % 3 == 0)
         {
